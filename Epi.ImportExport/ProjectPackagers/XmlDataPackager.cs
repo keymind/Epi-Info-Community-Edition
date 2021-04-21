@@ -716,9 +716,11 @@ namespace Epi.ImportExport.ProjectPackagers
             {
                 ParentIdList.Clear();
                 foreach (KeyValuePair<string, XmlElement> kvp in IdList) { ParentIdList.Add(kvp.Key); }
+
+                IdList.Clear(); // Very important, this needs to be re-set in case we've already processed a form (this is a class level variable)
+
             }
 
-            IdList.Clear(); // Very important, this needs to be re-set in case we've already processed a form (this is a class level variable)
 
             if (!ExportInfo.RecordsPackaged.ContainsKey(form))
             {

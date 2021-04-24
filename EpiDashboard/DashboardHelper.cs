@@ -2179,7 +2179,7 @@ namespace EpiDashboard
                 DataTable viewTable = new DataTable();
                 if (isRelatedView)
                 {
-                    viewTable = Database.GetTableData(vw.TableName, "GlobalRecordId");
+                    viewTable = Database.GetTableData(vw.TableName, "GlobalRecordId, FKEY");
                 }
                 else
                 {

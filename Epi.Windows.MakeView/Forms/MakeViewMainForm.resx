@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAC
-        4gAAAk1TRnQBSQFMAgEBYQEAAWMBAAGUAQIBEAEAAQ4BAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
+        4gAAAk1TRnQBSQFMAgEBYQEAAWMBAAGsAQIBEAEAAQ4BAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABXgEBAgABAQEAASAGAAFeAQH/AP8AEwABvQGcAXsF/wG9AZwBhAX/Ab0BnAF7Bf8BvQGcAYQF/wG9
         AZwBewX/Ab0BnAGEBf8BvQGcAXsF/wG9AZwBhAH/xAA8/8QAAb0BnAGECf8BvQGlAYQB/wG9AZwBhAH/
         Ab0BpQGEBf8BvQGlAYQB/wG9AZwBhAH/Ab0BpQGEEf8BvQGcAXsB/8QACP8BxgGlAYQJ/wG9AZwBhAX/
@@ -1126,7 +1126,7 @@
     <value>dockManager1</value>
   </data>
   <data name="&gt;&gt;dockManager1.Type" xml:space="preserve">
-    <value>Epi.Windows.Docking.DockManager, Epi.Windows, Version=7.2.7102.23449, Culture=neutral, PublicKeyToken=null</value>
+    <value>Epi.Windows.Docking.DockManager, Epi.Windows, Version=7.2.7817.1580, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;dockManager1.Parent" xml:space="preserve">
     <value>MainToolStripContainer.ContentPanel</value>
@@ -1218,7 +1218,7 @@
     <value>128, 0, 255</value>
   </data>
   <data name="NewProjectMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="NewProjectMenuItem.Text" xml:space="preserve">
     <value>New Project</value>
@@ -1238,16 +1238,22 @@
     <value>128, 0, 255</value>
   </data>
   <data name="NewProjectFromTemplateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="NewProjectFromTemplateMenuItem.Text" xml:space="preserve">
     <value>New Project from Template</value>
   </data>
   <data name="NewProjectFromExcelMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="NewProjectFromExcelMenuItem.Text" xml:space="preserve">
     <value>New Project from Data Dictionary</value>
+  </data>
+  <data name="NewProjectFromSQLScriptMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 22</value>
+  </data>
+  <data name="NewProjectFromSQLScriptMenuItem.Text" xml:space="preserve">
+    <value>New Project from SQL Script</value>
   </data>
   <data name="NewViewMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1273,7 +1279,7 @@
     <value>128, 0, 255</value>
   </data>
   <data name="NewViewMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="NewViewMenuItem.Text" xml:space="preserve">
     <value>New Form</value>
@@ -1300,13 +1306,13 @@
     <value>128, 0, 255</value>
   </data>
   <data name="NewPageMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="NewPageMenuItem.Text" xml:space="preserve">
     <value>New Page</value>
   </data>
   <data name="toolStripSeparator9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 6</value>
+    <value>262, 6</value>
   </data>
   <data name="openProjectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1332,13 +1338,13 @@
     <value>Ctrl+O</value>
   </data>
   <data name="openProjectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="openProjectToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Open Project</value>
   </data>
   <data name="openProjectFromWebToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="openProjectFromWebToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Project from Web </value>
@@ -1367,13 +1373,13 @@
     <value>128, 0, 255</value>
   </data>
   <data name="closeProjectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="closeProjectToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Close Project</value>
   </data>
   <data name="mnuImportTemplate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="mnuImportTemplate.Text" xml:space="preserve">
     <value>Get Template</value>
@@ -1382,7 +1388,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="toolStripMenuItemPrint.Text" xml:space="preserve">
     <value>Print</value>
@@ -1391,7 +1397,7 @@
     <value>False</value>
   </data>
   <data name="mnuCopyToPhone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="mnuCopyToPhone.Text" xml:space="preserve">
     <value>Copy Form to Mobile Device</value>
@@ -1400,7 +1406,7 @@
     <value>False</value>
   </data>
   <data name="toolStripPublishToWebEnter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="toolStripPublishToWebEnter.Text" xml:space="preserve">
     <value>Publish Form to Cloud Data Capture</value>
@@ -1412,25 +1418,25 @@
     <value>None</value>
   </data>
   <data name="mnuPublishToWeb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="mnuPublishToWeb.Text" xml:space="preserve">
     <value>Publish Form to Web Survey</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 6</value>
+    <value>262, 6</value>
   </data>
   <data name="recentProjectsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="recentProjectsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Recent Projects</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 6</value>
+    <value>262, 6</value>
   </data>
   <data name="exitMakeViewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>265, 22</value>
   </data>
   <data name="exitMakeViewToolStripMenuItem.Text" xml:space="preserve">
     <value>E&amp;xit</value>
@@ -1681,7 +1687,7 @@
     <value>False</value>
   </data>
   <data name="displayDataDictionaryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="displayDataDictionaryToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Data Dictionary</value>
@@ -1704,19 +1710,19 @@
     <value>128, 0, 255</value>
   </data>
   <data name="checkCodeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="checkCodeToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Check Code Editor</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 6</value>
+    <value>217, 6</value>
   </data>
   <data name="importEpi6RecFileToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="importEpi6RecFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="importEpi6RecFileToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Import Epi 6 &amp;Rec File</value>
@@ -1728,7 +1734,7 @@
     <value>False</value>
   </data>
   <data name="importCheckCodeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="importCheckCodeToolStripMenuItem.Text" xml:space="preserve">
     <value>Import &amp;Check Code</value>
@@ -1740,13 +1746,13 @@
     <value>False</value>
   </data>
   <data name="makeViewFromDataTableToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="makeViewFromDataTableToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Make Form from Data Table</value>
   </data>
   <data name="Import35xToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>181, 22</value>
   </data>
   <data name="Import35xToolStripMenuItem.Text" xml:space="preserve">
     <value>Epi Info 3.5.x (.MDB)</value>
@@ -1755,13 +1761,13 @@
     <value>False</value>
   </data>
   <data name="Import6xToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>181, 22</value>
   </data>
   <data name="Import6xToolStripMenuItem.Text" xml:space="preserve">
     <value>Epi Info 6.x (.REC)</value>
   </data>
   <data name="upgradeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="upgradeToolStripMenuItem.Text" xml:space="preserve">
     <value>Upgrade Project</value>
@@ -1779,7 +1785,7 @@
     <value>From Epi Info 7 project (SQL Server)</value>
   </data>
   <data name="makeProjectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="makeProjectToolStripMenuItem.Text" xml:space="preserve">
     <value>Make PRJ File</value>
@@ -1788,7 +1794,7 @@
     <value>False</value>
   </data>
   <data name="createDataTableToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="createDataTableToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Create Data Table</value>
@@ -1797,7 +1803,7 @@
     <value>False</value>
   </data>
   <data name="deleteDataTableToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="deleteDataTableToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Delete Data Table</value>
@@ -1806,7 +1812,7 @@
     <value>False</value>
   </data>
   <data name="copyViewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="copyViewToolStripMenuItem.Text" xml:space="preserve">
     <value>Copy &amp;Form</value>
@@ -1836,22 +1842,22 @@
     <value>128, 0, 255</value>
   </data>
   <data name="enterDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="enterDataToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Enter Data</value>
   </data>
   <data name="toolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 6</value>
+    <value>217, 6</value>
   </data>
   <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Options</value>
   </data>
   <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
+    <value>46, 20</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Tools</value>
@@ -2114,13 +2120,13 @@
     <value>6, 27</value>
   </data>
   <data name="toWebSurveyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
+    <value>193, 22</value>
   </data>
   <data name="toWebSurveyToolStripMenuItem.Text" xml:space="preserve">
     <value>To Web Survey</value>
   </data>
   <data name="toWebEnterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
+    <value>193, 22</value>
   </data>
   <data name="toWebEnterToolStripMenuItem.Text" xml:space="preserve">
     <value>To Cloud Data Capture</value>
@@ -6263,6 +6269,12 @@
   <data name="&gt;&gt;NewProjectFromExcelMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;NewProjectFromSQLScriptMenuItem.Name" xml:space="preserve">
+    <value>NewProjectFromSQLScriptMenuItem</value>
+  </data>
+  <data name="&gt;&gt;NewProjectFromSQLScriptMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;NewViewMenuItem.Name" xml:space="preserve">
     <value>NewViewMenuItem</value>
   </data>
@@ -6285,6 +6297,12 @@
     <value>openProjectToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;openProjectToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openProjectFromWebToolStripMenuItem.Name" xml:space="preserve">
+    <value>openProjectFromWebToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;openProjectFromWebToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;closeProjectToolStripMenuItem.Name" xml:space="preserve">
@@ -6833,16 +6851,10 @@
   <data name="&gt;&gt;btnPaste.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;openProjectFromWebToolStripMenuItem.Name" xml:space="preserve">
-    <value>openProjectFromWebToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;openProjectFromWebToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MakeViewMainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Epi.Windows.MainForm, Epi.Windows, Version=7.2.7102.23449, Culture=neutral, PublicKeyToken=null</value>
+    <value>Epi.Windows.MainForm, Epi.Windows, Version=7.2.7817.1580, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

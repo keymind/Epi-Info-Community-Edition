@@ -1497,6 +1497,10 @@
       <Project>{B5F72DDF-5349-4C03-9285-AE35110BA6CD}</Project>
       <Name>Epi.ImportExport</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Epi.SqlServer\Epi.SqlServer.csproj">
+      <Project>{12b794c7-8ef2-46a4-b8aa-2526cdd7a66e}</Project>
+      <Name>Epi.SqlServer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Epi.Windows.Globalization\Epi.Windows.Globalization.csproj">
       <Project>{42A2EA6A-823C-4503-AD08-ED1D2FD6B762}</Project>
       <Name>Epi.Windows.Globalization</Name>

@@ -32,6 +32,8 @@ using System.DirectoryServices;
 using System.DirectoryServices.AccountManagement;
 using Epi.Windows.MakeView.PresentationLogic;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
+using Epi.Data.Services;
 #endregion Namespaces
 
 namespace Epi.Windows.MakeView.Forms
@@ -5786,5 +5788,90 @@ namespace Epi.Windows.MakeView.Forms
             */
         }
 
+        private void NewProjectFromSQLScriptMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ProjectFromSqlScriptDialog dialog = new ProjectFromSqlScriptDialog();
+
+            string projectName = string.Empty;
+            string projectDescription = string.Empty;
+            string projectLocation = string.Empty;
+            string dataDBInfo = string.Empty;
+            Data.DbDriverInfo dbDriverInfo = new Data.DbDriverInfo();
+            string sqlScriptPath = string.Empty;
+
+            try
+            {
+                dialog.ShowDialog();
+
+                if (dialog.DialogResult == DialogResult.OK)
+                {
+                    CloseCurrentProject();
+                    projectName = dialog.ProjectName;
+                    projectLocation = dialog.ProjectLocation;
+                    dataDBInfo = dialog.DataDBInfo;
+                    dbDriverInfo = dialog.DriverInfo;
+                    sqlScriptPath = dialog.SqlScriptPath;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            finally
+            {
+                dialog.Dispose();
+                GC.Collect();
+                Refresh();
+            }
+
+            canvas.HideUpdateStart("Loading SQL scripts");
+            var sqlScripts = new Epi.SqlServer.SqlScripts();
+            sqlScripts.ConnectionString = dbDriverInfo.DBCnnStringBuilder.ConnectionString;
+            var scriptResult = sqlScripts.RunScript(dbDriverInfo.DBName, sqlScriptPath);
+
+            if (!scriptResult.Success)
+            {               
+                MsgBox.ShowError(scriptResult.Message);
+                canvas.HideUpdateEnd();
+                return;
+            }
+
+
+            canvas.UpdateHidePanel(SharedStrings.CREATING_PROJECT);
+
+            Project newProject = Util.CreateProjectFileFromDatabase(
+                dbDriverInfo.DBCnnStringBuilder.ConnectionString
+                , true, projectLocation, projectName);
+
+            if (newProject != null)
+            {
+                mediator.Project = newProject;
+                if (this.Interpreter == null)
+                {
+                    Assembly assembly = Assembly.Load(newProject.EnterMakeviewIntepreter);
+                    Type myType = assembly.GetType(newProject.EnterMakeviewIntepreter + ".EpiInterpreterParser");
+                    this.Interpreter = (IEnterInterpreter)Activator.CreateInstance(myType, new object[] { this.mediator });
+                    this.Interpreter.Host = this.mediator;
+                }
+
+                canvas.UpdateHidePanel(SharedStrings.LOADING_PROJECT);
+
+                projectExplorer.LoadProject(newProject);
+
+
+                //EnableFeatures();
+                OnProjectAccessed(newProject);
+
+                // The code below is needed to catch a condition where the ParentView property of each View object is
+                // not set during the creation of the template. Instead of re-writing this code in the template creation
+                // process, we simply force the metadata to be refreshed (which assigns the ParentView property correctly).
+                newProject.views = null;
+                newProject.LoadViews();
+            }
+
+            canvas.HideUpdateEnd();
+            EnableFeatures();
+        }
     }
 }

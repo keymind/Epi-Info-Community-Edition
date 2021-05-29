@@ -56,10 +56,12 @@ namespace Epi.Windows.MakeView.Forms
             this.NewProjectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewProjectFromTemplateMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewProjectFromExcelMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NewProjectFromSQLScriptMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewViewMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewPageMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.openProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openProjectFromWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuImportTemplate = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemPrint = new System.Windows.Forms.ToolStripMenuItem();
@@ -152,7 +154,6 @@ namespace Epi.Windows.MakeView.Forms
             this.btnCut = new System.Windows.Forms.ToolStripButton();
             this.btnCopy = new System.Windows.Forms.ToolStripButton();
             this.btnPaste = new System.Windows.Forms.ToolStripButton();
-            this.openProjectFromWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainToolStripContainer.ContentPanel.SuspendLayout();
             this.MainToolStripContainer.TopToolStripPanel.SuspendLayout();
             this.MainToolStripContainer.SuspendLayout();
@@ -308,6 +309,7 @@ namespace Epi.Windows.MakeView.Forms
             this.NewProjectMenuItem,
             this.NewProjectFromTemplateMenuItem,
             this.NewProjectFromExcelMenuItem,
+            this.NewProjectFromSQLScriptMenuItem,
             this.NewViewMenuItem,
             this.NewPageMenuItem,
             this.toolStripSeparator9,
@@ -344,6 +346,12 @@ namespace Epi.Windows.MakeView.Forms
             resources.ApplyResources(this.NewProjectFromExcelMenuItem, "NewProjectFromExcelMenuItem");
             this.NewProjectFromExcelMenuItem.Click += new System.EventHandler(this.NewProjectFromExcelMenuItem_Click);
             // 
+            // NewProjectFromSQLScriptMenuItem
+            // 
+            this.NewProjectFromSQLScriptMenuItem.Name = "NewProjectFromSQLScriptMenuItem";
+            resources.ApplyResources(this.NewProjectFromSQLScriptMenuItem, "NewProjectFromSQLScriptMenuItem");
+            this.NewProjectFromSQLScriptMenuItem.Click += new System.EventHandler(this.NewProjectFromSQLScriptMenuItem_Click);
+            // 
             // NewViewMenuItem
             // 
             resources.ApplyResources(this.NewViewMenuItem, "NewViewMenuItem");
@@ -366,6 +374,12 @@ namespace Epi.Windows.MakeView.Forms
             resources.ApplyResources(this.openProjectToolStripMenuItem, "openProjectToolStripMenuItem");
             this.openProjectToolStripMenuItem.Name = "openProjectToolStripMenuItem";
             this.openProjectToolStripMenuItem.Click += new System.EventHandler(this.OpenProject_Click);
+            // 
+            // openProjectFromWebToolStripMenuItem
+            // 
+            this.openProjectFromWebToolStripMenuItem.Name = "openProjectFromWebToolStripMenuItem";
+            resources.ApplyResources(this.openProjectFromWebToolStripMenuItem, "openProjectFromWebToolStripMenuItem");
+            this.openProjectFromWebToolStripMenuItem.Click += new System.EventHandler(this.OpenProjectFromWebToolStripMenuItem_Click);
             // 
             // closeProjectToolStripMenuItem
             // 
@@ -989,12 +1003,6 @@ namespace Epi.Windows.MakeView.Forms
             resources.ApplyResources(this.btnPaste, "btnPaste");
             this.btnPaste.Name = "btnPaste";
             // 
-            // openProjectFromWebToolStripMenuItem
-            // 
-            this.openProjectFromWebToolStripMenuItem.Name = "openProjectFromWebToolStripMenuItem";
-            resources.ApplyResources(this.openProjectFromWebToolStripMenuItem, "openProjectFromWebToolStripMenuItem");
-            this.openProjectFromWebToolStripMenuItem.Click += new System.EventHandler(this.OpenProjectFromWebToolStripMenuItem_Click);
-            // 
             // MakeViewMainForm
             // 
             this.AllowDrop = true;
@@ -1147,5 +1155,6 @@ namespace Epi.Windows.MakeView.Forms
         private ToolStripSeparator toolStripSeparator12;
         private ToolStripMenuItem NewProjectFromExcelMenuItem;
         private ToolStripMenuItem openProjectFromWebToolStripMenuItem;
+        private ToolStripMenuItem NewProjectFromSQLScriptMenuItem;
     }
 }

@@ -84,7 +84,7 @@ namespace Epi.SqlServer
             }
 
             string[] SqlLine;
-            Regex regex = new Regex("^GO\r\n", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+            Regex regex = new Regex("^GO(\r\n|\n|$)", RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
             SqlLine = regex.Split(txtSQL);
 
